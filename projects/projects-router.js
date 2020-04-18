@@ -53,7 +53,7 @@ router.get("/:id", (req, res) => {
     })
 })
 
-router.post("/projects", (req, res) => {
+router.post("/", (req, res) => {
     const projectData = req.body;
 
     Projects.addProject(projectData)
